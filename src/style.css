@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --rouge:#990419 ;
+    --rouge-fonce:#651822;
+    --vert:#049918 ;
+    --vert-clair:#bedfbe;
+    --noir: #040404;
+    --blanc: #FFFFFF;
+    --gris:#EAECF0;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--gris);
+}
+
+ul{
+    display: inline-flex;
+}
+
+li{
+    list-style: none;
+}
+
+section{
+    padding: 2rem 5%;
+}
+
+.title{
+    padding: 0 5%;
+    margin-top: 85px;
+    font-size: 2.3rem;
+    color:var(--noir);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: var(--blanc);
+    background: var(--rouge);
+    border-radius: .5rem;
+}
+
+.btn-svg{
+    padding:.8rem;
+    cursor: pointer;
+    background: var(--blanc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background: var(--rouge-fonce);
+}
+
+header{
+    height: 100vh;
+    width: 200px;
+    padding: 60px 20px;
+    background: var(--blanc);
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color:var(--rouge);
+    font-weight: bolder;
+}
+
+.compte {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.compte h3 {
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.compte img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.compte .badge{
+    display: inline-block;
+    padding:.7rem 2rem;
+    font-size: 1.5rem;
+    color: var(--vert);
+    background: var(--vert-clair);
+    border-radius: .5rem;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.navbar ul{
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.navbar ul li{
+    background-color: var(--blanc);
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding:.9rem 3rem;
+    cursor: pointer;
+}
+
+.navbar ul li a{
+    font-size: 1.7rem;
+    color: var(--rouge-fonce);
+}
+
+.navbar ul li.active,
+.navbar ul li:hover{
+    background-color: var(--rouge);
+}
+
+.navbar ul li.active a,
+.navbar ul li:hover a{
+    color: var(--blanc);
+}
+
+.container{
+    width: calc(100% - 200px);
+    float: right;
+    margin-bottom: 100px;
+}
+
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+    padding-left: 250px ;
+    padding-right: 20px;
+    background-color: var(--blanc);
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search img{
+    margin-right: 10px;
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.log img{
+    height:  50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+form{
+    text-align: center;
+} 
+
+form .box{
+    width: 100%;
+    margin:.8rem 0;
+    padding:1rem 1.5rem;
+    border-radius: .5rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    text-transform: none;
+    font-size: 1.4rem;
+}
+
+form .box:focus,
+form .box:hover{
+    border-color: var(--rouge);
+}
+
+form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+table{
+    width: 100%;
+	border-spacing: 0 15px;
+	border-collapse: separate;
+}
+
+table thead tr th,
+table tbody tr td {
+	vertical-align: middle;
+	border: none;
+}
+
+table tbody tr td:nth-child(1) {
+	border-radius: .5rem 0 0 .5rem;
+}
+
+table tbody tr td:nth-last-child(1) {
+	border-radius: 0 .5rem .5rem 0;
+}
+
+table thead tr th {
+	font-size: 1.5rem;
+    color:var(--rouge);
+    padding-top: 1rem;
+}
+
+table tbody tr td {
+	font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+table tbody tr {
+	box-shadow: var(--box-shadow);
+	border-radius: .5rem;
+}
+
+table tbody tr td {
+	background: var(--blanc);
+}
+
+.btn-group{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: .5rem;
+}
+
+.img-svg {
+    height: 20px;
+    width: 20px;
+}
+
+.first{
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.first h5{
+    font-size: 1.4rem;
+}
+
+.last{
+    padding-right: 1.5rem;
+    text-align: right;
+}

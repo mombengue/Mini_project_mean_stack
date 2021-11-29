@@ -1,0 +1,19 @@
+{
+  "name": "mbengue",
+  "version": "1.0.0",
+  "description": "Mini projet pour la formation mean stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Mini_project_mean_stack"
+  },
+  "author": "Mamadou MBENGUE, Aminata GAYE",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
