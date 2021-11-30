@@ -200,8 +200,8 @@ header{
     border-radius: 50%;
 }
 
-form{
-    text-align: center;
+form button{
+    float: right;
 } 
 
 form .box{
@@ -291,4 +291,32 @@ table tbody tr td {
 .last{
     padding-right: 1.5rem;
     text-align: right;
+}
+
+.label{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--noir);
+    text-align: left;
+}
+
+#journal_template{
+    display: none;
+}
+
+#extrait_template{
+    display: none;
+}
+
+.total{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+}
+
+.total h2{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--noir);
 }
